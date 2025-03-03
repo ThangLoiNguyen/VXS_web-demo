@@ -8,6 +8,7 @@ export default function ProductPage() {
     <div>
       <Navigation/>
       <Routing
+        title={'Product'}
         link={'Product'}
       />
       <Footer/>

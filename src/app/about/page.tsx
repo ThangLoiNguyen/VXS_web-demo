@@ -11,6 +11,7 @@ export default function AboutPage() {
       <Navigation />
       <ContactSocial />     
       <Routing
+      title={'About'}
         link={'About'} />
       <AboutPageContent />
       <Footer/>
