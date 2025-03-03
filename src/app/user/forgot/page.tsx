@@ -21,7 +21,7 @@ export default function ForgotPage() {
         muted
         playsInline
       ></video>
-      <div className='flex flex-row w-[90%] xl:w-[50%] bg-white rounded-3xl overflow-hidden'>
+      <div className='flex flex-row w-[90%] xl:w-[30%] bg-white rounded-3xl overflow-hidden'>
         <div className='w-full h-full px-5 py-5'>
           <span className='flex justify-center text-2xl font-bold py-6'>Forgot Password</span>
           <div className='px-6 md:py-20 xl:py-40'>
