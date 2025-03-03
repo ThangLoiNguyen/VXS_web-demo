@@ -4,13 +4,14 @@ import slideIntro from '../../Assets/slide-intro.avif'
 import Link from 'next/link'
 import ContactSocial from '@/Components/ContactSocial'
 import Footer from '@/Components/Footer'
+import AboutItems from '@/Components/AboutItems'
 
 export default function HomePage() {
   return (
     <div>
       <ContactSocial />
       <Navigation />
-      <div className='relative mb-60'>
+      <div className='relative mb-80'>
         <img src={slideIntro.src} alt="slide-intro" className='animate-fade-left-right w-11/12' />
         <div className='absolute animate-fade-up flex flex-col top-60 right-80 gap-10 bg-white ring-2 ring-gray-200 p-16 w-2/5'>
           <span className='text-6xl'>IT Consulting & Services</span>
@@ -23,7 +24,9 @@ export default function HomePage() {
           </span>
         </div>
       </div>
-      <Footer/>
+      <AboutItems/>
+      <div className='h-[900px]'></div>
+      <Footer />
     </div>
   )
 }
