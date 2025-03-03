@@ -25,7 +25,6 @@ export default function HomePage() {
         </div>
       </div>
       <AboutItems/>
-      <div className='h-[900px]'></div>
       <Footer />
     </div>
   )

@@ -35,7 +35,7 @@
 
 @keyframes fade-right-left {
   from {
-    transform: translateX(150%);
+    transform: translateX(30%);
     opacity: 0;
   }
   to {
