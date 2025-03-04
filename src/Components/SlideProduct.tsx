@@ -73,7 +73,7 @@ export default function SlideProduct() {
                                 <span className='flex justify-center text-2xl font-semibold'>Gecko</span>
                                 <span className='flex justify-center text-sm pb-5'>Learning English</span>
                                 <button>
-                                    <a href="" className='bg-sky-600 hover:bg-sky-700 text-white px-3 py-2 rounded-lg'>Xem live</a>
+                                    <a href="https://gecko-cms.2soft.top/" className='bg-sky-600 hover:bg-sky-700 text-white text-xs px-3 py-2 rounded-lg'>Xem live</a>
                                 </button>
                             </div>
                         </div>

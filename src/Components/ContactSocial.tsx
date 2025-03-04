@@ -16,12 +16,12 @@ export default function ContactSocial() {
                     </Link>
                 </div>
                 <div className='flex bg-white px-2 py-1.5 rounded-full'>
-                    <Link href={'https://x.com/?mx=2'}>
+                    <Link href={'https://x.com/'}>
                         <FontAwesomeIcon icon={faTwitter} className='h-5 w-5 hover:scale-125 text-black hover:text-sky-600 opacity-50 hover:opacity-100 duration-300 cursor-pointer' />
                     </Link>
                 </div>
                 <div className='flex bg-white px-2 py-1.5 rounded-full'>
-                    <Link href={'https://www.facebook.com/'}>
+                    <Link href={'https://www.instagram.com/'}>
                         <FontAwesomeIcon icon={faLinkedinIn} className='h-5 w-5 hover:scale-125 text-black hover:text-sky-600 opacity-50 hover:opacity-100 duration-300 cursor-pointer' />
                     </Link>
                 </div>

@@ -40,7 +40,7 @@ export default function Navigation() {
             </div>
             <div className='relative hidden md:flex'>
                 <input type="text" placeholder='Tìm kiếm' className='md:w-[200px] xl:w-[300px] border border-gray-300 py-2 px-5 pr-12 rounded-full duration-600 outline-none focus:border focus:border-gray-500' />
-                <FontAwesomeIcon icon={faSearch} className='absolute top-1/2 -translate-y-1/2 right-5 text-gray-500' />
+                <FontAwesomeIcon icon={faSearch} className='absolute top-1/2 -translate-y-1/2 right-5 text-gray-500 cursor-pointer' />
             </div>
         </div>
     )
