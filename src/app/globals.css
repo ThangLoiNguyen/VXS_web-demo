@@ -8,7 +8,7 @@
 :root {
   --background: #ffffff !important;
   --foreground: #171717;
-  --primary-color: #1a2b6d;
+  --primary-color: rgb(2, 132, 199);
   --secondary-color: red;
 }
 
@@ -73,6 +73,16 @@
 }
 .animate-visible {
   animation: visible .6s ease-in-out forwards;
+}
+
+.slick-dots li.slick-active button:before {
+  font-size: 15px !important;
+  color: var(--primary-color) !important;
+}
+
+.slick-dots li button:before {
+  font-size: 9px !important;
+  color: var(--primary-color) !important;
 }
 
 body {

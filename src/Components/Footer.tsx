@@ -26,25 +26,27 @@ export default function Footer() {
                 </div>
             </div>
             <div className='flex flex-col gap-3 px-5 md:px-0 md:w-2/5 md:pr-10 xl:pr-32 select-none'>
-                <span className='text-lg font-semibold'>Câu hỏi cho chúng tôi</span>
+                <span className='text-lg xl:text-xl font-semibold pt-10 py-5'>Câu hỏi cho chúng tôi</span>
                 <div className='flex flex-col gap-2'>
-                    <div className='flex flex-col gap-1'>
-                        <label htmlFor="email" className='cursor-pointer text-sm xl:text-base'>Your Email</label>
-                        <input
-                            type="text"
-                            id='email'
-                            name='Email'
-                            className='px-3 py-2 w-full rounded-full'
-                        />
-                    </div>
-                    <div className='flex flex-col gap-1'>
-                        <label htmlFor="phone" className='cursor-pointer text-sm xl:text-base'>Your Phone Nummber</label>
-                        <input
-                            type="text"
-                            id='phone'
-                            name='Phone number'
-                            className='px-3 py-2 w-full rounded-full'
-                        />
+                    <div className='flex flex-row gap-5 w-full'>
+                        <div className='flex flex-col gap-1 w-1/2'>
+                            <label htmlFor="email" className='cursor-pointer text-sm xl:text-base'>Email</label>
+                            <input
+                                type="text"
+                                id='email'
+                                name='Email'
+                                className='px-3 py-2 w-full rounded-full outline-none focus:border focus:border-gray-500'
+                            />
+                        </div>
+                        <div className='flex flex-col gap-1 w-[45%]'>
+                            <label htmlFor="phone" className='cursor-pointer text-sm xl:text-base'>Phone Nummber</label>
+                            <input
+                                type="text"
+                                id='phone'
+                                name='Phone number'
+                                className='px-3 py-2 w-full rounded-full outline-none focus:border focus:border-gray-500'
+                            />
+                        </div>
                     </div>
                     <div className='flex flex-col gap-1'>
                         <label htmlFor="question" className='cursor-pointer text-sm xl:text-base'>Your Question</label>
@@ -52,10 +54,10 @@ export default function Footer() {
                             type="text"
                             id='question'
                             name='Question'
-                            className='px-3 py-2 w-full rounded-full'
+                            className='px-3 py-2 w-full rounded-full outline-none focus:border focus:border-gray-500'
                         />
                     </div>
-                    <button className='bg-black text-white px-3 py-2 mt-6 rounded-full cursor-pointer hover:bg-gray-800 shadow-lg'>Submit</button>
+                    <button className='bg-sky-600 text-white px-3 py-2 mt-6 rounded-full cursor-pointer hover:bg-sky-700 shadow-lg'>Submit</button>
                 </div>
             </div>
         </div>

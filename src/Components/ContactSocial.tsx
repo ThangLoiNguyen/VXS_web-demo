@@ -9,7 +9,7 @@ export default function ContactSocial() {
     const handleShowChat = () => setShowChat(!showChat)
     return (
         <div>
-            <div className='hidden md:fixed animate-fade-right-left z-50 bottom-[200px] right-12 md:flex flex-col gap-10'>
+            <div className='hidden md:fixed animate-fade-right-left z-50 h-0 bottom-[400px] right-12 md:flex flex-col gap-10'>
                 <div className='flex bg-white px-2 py-1.5 rounded-full'>
                     <Link href={'https://www.facebook.com/'}>
                         <FontAwesomeIcon icon={faFacebookF} className=' h-5 w-5 object-cover hover:scale-125 text-black hover:text-sky-600 opacity-50 hover:opacity-100 duration-300 cursor-pointer' />
@@ -26,7 +26,7 @@ export default function ContactSocial() {
                     </Link>
                 </div>
             </div>
-            <div className='md:fixed z-50 bottom-14 right-10 animate-visible'>
+            <div className='md:fixed z-50 h-0 bottom-20 right-10 animate-visible'>
                 <span className='absolute top-0 left-0 rounded-full w-3 h-3 bg-red-600'></span>
                 <div className='hover:bg-[--primary-color] px-3 py-2.5 bg-sky-600 rounded-full cursor-pointer duration-300'>
                         <FontAwesomeIcon icon={faFacebookMessenger} 
@@ -35,7 +35,7 @@ export default function ContactSocial() {
                 </div>
                 <span className='absolute -z-10 top-[6px] left-[6px] rounded-full w-9 h-9 bg-red-600 animate-ping'></span>
                 {showChat && 
-                <div className='absolute shadow-2xl -bottom-14 right-16 w-[400px] max-h-[500px] h-[80vh] bg-white rounded-t-2xl select-none overflow-hidden animate-fade-in'>
+                <div className='absolute shadow-2xl -bottom-20 right-16 w-[400px] max-h-[500px] h-[80vh] bg-white rounded-t-2xl select-none overflow-hidden animate-fade-in'>
                     <div className='relative h-16 w-full bg-sky-600'>
                         <img src="vxs-logo.jpg" alt=" vxs-logo" className='absolute top-1/2 -translate-y-1/2 left-3 h-10 w-10 rounded-full object-cover' />
                         <div className='absolute z-10 top-1/2 translate-y-[7px] left-10 w-3 h-3 rounded-full bg-green-600'></div>

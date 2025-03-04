@@ -29,9 +29,6 @@ export default function AboutPageContent() {
     ]
     return (
         <div className='flex flex-col w-full py-10'>
-            <span className='flex justify-center w-full'>
-                <h1 className=' text-lg md:text-5xl font-bold pb-20'> We provide the web design</h1>
-            </span>
             <div className="flex flex-col gap-10">
                 {dataAbout.map(({ id, title, text, image, background }) => (
                     <div key={id} className={`flex flex-row w-full gap-2

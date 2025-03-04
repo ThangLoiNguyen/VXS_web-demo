@@ -3,6 +3,8 @@ import React from 'react'
 import vxsLogo from '../assets/vxs-logo.jpg'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export default function Navigation() {
     const pathname = usePathname();
     return (
@@ -36,13 +38,9 @@ export default function Navigation() {
                     </div>
                 </div>
             </div>
-            <div className='hidden sm:flex flex-row w-[80%] sm:w-[40%] lg:w-[25%] 2xl:w-[20%] gap-3 items-center'>
-                <Link href={'/user/signIn'} className=' flex text-xs 2xl:text-base px-2 font-sans justify-center border rounded-full py-2 w-1/2 border-sky-600 hover:border-[--primary-color]  bg-sky-600 text-white hover:bg-[--primary-color] hover:text-white duration-300'>
-                    <span>Đăng nhập</span>
-                </Link>
-                <Link href={'/user/signUp'} className=' flex text-xs 2xl:text-base px-2 font-sans justify-center border rounded-full py-2 w-1/2 border-sky-600 hover:border-[--primary-color] text-sky-600 bg-white hover:bg-[--primary-color] hover:text-white duration-300'>
-                    <span >Đăng ký</span>
-                </Link>
+            <div className='relative hidden md:flex'>
+                <input type="text" placeholder='Tìm kiếm' className='md:w-[200px] xl:w-[300px] border border-gray-300 py-3 px-5 pr-12 h-10 2xl:h-14 rounded-full duration-600 outline-none focus:border focus:border-gray-500' />
+                <FontAwesomeIcon icon={faSearch} className='absolute top-1/2 -translate-y-1/2 right-5 text-gray-500' />
             </div>
         </div>
     )
