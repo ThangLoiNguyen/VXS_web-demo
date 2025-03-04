@@ -10,13 +10,31 @@ export default function SlideProduct() {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        centerPadding: "60px",
+        centerPadding: "200px",
         centerMode: true,
         speed: 600,
         autoplaySpeed: 3000,
         cssEase: "linear",
-        variableWidth: true,
-        arrows: false
+        variableWidth: false,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 768, // Dưới 768px (mobile)
+                settings: {
+                    slidesToShow: 1,
+                    centerPadding: "100px",
+                    variableWidth: false,
+                }
+            },
+            {
+                breakpoint: 480, // Dưới 480px (mobile nhỏ)
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: false, // Có thể tắt nếu bị lỗi trên mobile
+                    variableWidth: false
+                }
+            }
+        ]
     };
     const dataProduct = [
         {
@@ -45,11 +63,11 @@ export default function SlideProduct() {
         }
     ]
     return (
-        <div className='py-10 w-full'>
+        <div className='py-16 w-full'>
             <Slider {...settings}>
                 {dataProduct.map(({ id, image }) => (
-                    <div key={id} className='px-3 w-4/5 pb-5'>
-                        <div className='flex flex-row w-full p-8 pb-16 items-center gap-5 rounded border bg-gradient-to-r from-sky-500 via-white to-white'>
+                    <div key={id} className='px-3 pb-10'>
+                        <div className='flex flex-col md:flex-row w-full p-8 md:pb-16 items-center gap-5 rounded border bg-gradient-to-r from-sky-500 via-white to-white'>
                             <img src={image.src} alt="image" className='w-2/3 object-contain' />
                             <div className='flex flex-col items-center justify-center w-full gap-1'>
                                 <span className='flex justify-center text-2xl font-semibold'>Gecko</span>

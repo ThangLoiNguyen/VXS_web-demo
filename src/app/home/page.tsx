@@ -5,6 +5,7 @@ import Link from 'next/link'
 import ContactSocial from '@/Components/ContactSocial'
 import Footer from '@/Components/Footer'
 import AboutItems from '@/Components/AboutItems'
+import SlideProduct from '@/Components/SlideProduct'
 
 export default function HomePage() {
   return (
@@ -25,6 +26,12 @@ export default function HomePage() {
         </div>
       </div>
       <AboutItems/>
+      <div className='hidden md:flex w-full justify-center px-5 pt-16 pb-5'>
+        <div className='w-full px-10 py-5 border-b border-gray-300'>
+          <span className='text-3xl font-semibold py-[18px] border-b border-sky-500'>Sản phẩm tiêu biểu</span>
+        </div>
+      </div>
+      <SlideProduct/>
       <Footer />
     </div>
   )

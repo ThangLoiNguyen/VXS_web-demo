@@ -37,7 +37,7 @@ export default function AboutItems() {
         </span>
         <p className='text-white'>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me.</p>
       </div>
-      <div className='absolute flex flex-row flex-wrap top-72 gap-14 justify-center items-center w-full px-6 sm:px-20 xl:px-40 2xl:px-96'>
+      <div className='absolute flex flex-row flex-wrap top-72 gap-14 justify-center items-center w-full px-6 sm:px-20 xl:px-40 2xl:px-60'>
       {dataAboutItems.map(({ title, text }, index) => (
           <div key={index} className='relative flex flex-col h-52 sm:h-44 md:h-60 lg:h-80 w-56 lg:w-72 px-6 lg:px-10 py-3 md:py-5 lg:py-8 gap-1 lg:gap-3 bg-gray-300 z-30'>
           <div className='sm:text-lg lg:text-4xl text-black'>{title}</div>
@@ -49,7 +49,7 @@ export default function AboutItems() {
           </div>
         ))}
       </div>
-      <div className='h-[1500px] sm:h-[1300px] md:h-[800px] lg:h-[1000px] xl:h-[950px]'></div>
+      <div className='h-[1500px] sm:h-[1300px] md:h-[800px] lg:h-[1000px] xl:h-[950px] 2xl:h-[600px]'></div>
     </div>
   )
 }

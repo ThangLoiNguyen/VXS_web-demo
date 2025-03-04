@@ -13,7 +13,7 @@ export default function AboutPage() {
       <Routing
         title={'About'}
         link={'About'} />
-      <div className='flex w-full justify-center px-5 pt-16 pb-5'>
+      <div className='hidden md:flex w-full justify-center px-5 pt-16 pb-5'>
         <div className='w-[80%] px-10 py-5 border-b border-gray-300'>
           <span className='text-3xl font-semibold py-[18px] border-b border-sky-500'>Về công ty chúng tôi</span>
         </div>
