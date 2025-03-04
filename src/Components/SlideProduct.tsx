@@ -70,10 +70,10 @@ export default function SlideProduct() {
                         <div className='flex flex-col md:flex-row w-full p-8 md:pb-16 items-center gap-5 rounded border bg-gradient-to-r from-sky-500 via-white to-white'>
                             <img src={image.src} alt="image" className='w-2/3 object-contain' />
                             <div className='flex flex-col items-center justify-center w-full gap-1'>
-                                <span className='flex justify-center text-2xl font-semibold'>Gecko</span>
-                                <span className='flex justify-center text-sm pb-5'>Learning English</span>
+                                <span className='flex justify-center text-3xl md:text-2xl lg:text-3xl font-semibold'>Gecko</span>
+                                <span className='flex justify-center text-base md:text-sm lg:text-base pb-5'>Learning English</span>
                                 <button>
-                                    <a href="https://gecko-cms.2soft.top/" className='bg-sky-600 hover:bg-sky-700 text-white text-xs px-3 py-2 rounded-lg'>Xem live</a>
+                                    <a href="https://gecko-cms.2soft.top/" className='bg-sky-600 hover:bg-sky-700 text-white text-base md:text-xs lg:text-base px-3 py-2 rounded-lg'>Xem live</a>
                                 </button>
                             </div>
                         </div>
