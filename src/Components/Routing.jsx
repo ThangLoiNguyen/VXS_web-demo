@@ -7,7 +7,7 @@ function Routing({ title, link }) {
     <div className='relative z-30'>
       <div className='flex flex-col py-5 md:py-14 bg-black items-center justify-center gap-3 md:gap-8'>
         <span className='text-xl md:text-5xl text-white'>{title}</span>
-        <span className='flex justify-center items-center px-8 md:w-2/3 text-white text-sm md:text-base'>
+        <span className='flex justify-center items-center px-8 md:w-2/3 text-white text-xs md:text-base'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eveniet eaque commodi similique dolore dolores laborum? Nesciunt, quia, totam maxime voluptatibus molestias, eius laborum magnam mollitia neque ipsam eum libero.
         </span>
       </div>

@@ -9,7 +9,7 @@ import Image from 'next/image'
 export default function Navigation() {
     const pathname = usePathname();
     return (
-        <div className='sticky z-40 overflow-hidden top-0 bg-white flex flex-row h-24 2xl:h-32 w-full gap-10 px-2 md:px-10 items-center shadow select-none'>
+        <div className='sticky z-40 overflow-hidden top-0 bg-white hidden lg:flex flex-row h-24 2xl:h-32 w-full gap-10 px-2 md:px-10 items-center shadow select-none'>
             <div className='flex flex-row justify-between w-full'>
                 <Link href={'/'} className='flex flex-row gap-5 items-center w-fit'>
                     <Image src={vxsLogo} alt="vxs-logo"
