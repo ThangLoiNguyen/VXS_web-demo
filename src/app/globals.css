@@ -61,6 +61,20 @@
   animation: fade-up .6s ease-in forwards;
 }
 
+@keyframes fade-down {
+  from {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.animate-fade-down {
+  animation: fade-down .1s ease-in forwards;
+}
+
 @keyframes fade-menu {
   from {
     transform: translateX(30%);
