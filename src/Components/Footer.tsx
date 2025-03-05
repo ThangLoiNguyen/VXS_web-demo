@@ -8,7 +8,7 @@ export default function Footer() {
         <div className='bg-gray-200 flex flex-col md:flex-row justify-around w-full p-3 gap-10 md:gap-0 pb-10'>
             <div className='flex flex-col gap-10 w-full px-5 md:px-0 md:w-1/3 pt-10'>
                 <div className='flex flex-row items-center gap-3'>
-                    <Image src={vxsLogo} alt=" vxs-logo" className='h-10 xl:h-16 object-cover rounded-2xl' />
+                    <Image src={vxsLogo} alt=" vxs-logo" className='h-10 w-10 xl:h-16 xl:w-16 object-cover rounded-2xl' />
                     <span className='text-xs xl:text-base font-sans font-semibold w-1/2 text-black'>CÔNG TY CỔ PHẦN CÔNG NGHỆ VXS</span>
                 </div>
                 <div className='flex flex-col gap-5 px-3'>
