@@ -12,6 +12,9 @@ const nextConfig: NextConfig = {
     }
     return config;
   },
+  output: "export",
+  basePath: "/VXS_web-demo",
+  assetPrefix: "/VXS_web-demo/",
 };
 
 export default nextConfig;
