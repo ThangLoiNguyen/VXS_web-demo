@@ -1,6 +1,7 @@
 import AboutPageContent from '@/Components/AboutPageContent'
 import ContactSocial from '@/Components/ContactSocial'
 import Footer from '@/Components/Footer'
+import MobileMenu from '@/Components/MobileMenu'
 import Navigation from '@/Components/Navigation'
 import Routing from '@/Components/Routing'
 import React from 'react'
@@ -9,6 +10,7 @@ export default function AboutPage() {
   return (
     <div>
       <Navigation />
+      <MobileMenu/>
       <ContactSocial />
       <Routing
         title={'About'}

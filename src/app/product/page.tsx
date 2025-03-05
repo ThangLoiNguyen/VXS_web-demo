@@ -1,4 +1,5 @@
 import Footer from '@/Components/Footer'
+import MobileMenu from '@/Components/MobileMenu'
 import Navigation from '@/Components/Navigation'
 import Routing from '@/Components/Routing'
 import SlideProduct from '@/Components/SlideProduct'
@@ -8,6 +9,7 @@ export default function ProductPage() {
   return (
     <div>
       <Navigation />
+      <MobileMenu />
       <Routing
         title={'Product'}
         link={'Product'}

@@ -9,14 +9,14 @@ import Image from 'next/image'
 export default function Navigation() {
     const pathname = usePathname();
     return (
-        <div className='sticky z-50 overflow-hidden top-0 bg-white flex flex-row h-24 2xl:h-32 w-full gap-10 px-2 md:px-10 items-center shadow select-none'>
+        <div className='sticky z-40 overflow-hidden top-0 bg-white flex flex-row h-24 2xl:h-32 w-full gap-10 px-2 md:px-10 items-center shadow select-none'>
             <div className='flex flex-row justify-between w-full'>
                 <Link href={'/'} className='flex flex-row gap-5 items-center w-fit'>
                     <Image src={vxsLogo} alt="vxs-logo"
                         className='w-16 2xl:w-20 rounded-2xl overflow-hidden object-contain' />
                     <span className='text-sm 2xl:text-xl font-sans font-semibold w-[125px] 2xl:w-[200px] text-black'>CÔNG TY CỔ PHẦN CÔNG NGHỆ VXS</span>
                 </Link>
-                <div className='hidden lg:flex flex-row items-center gap-10'>
+                <div className='hidden md:flex flex-row items-center gap-10'>
                     <div className='flex flex-col items-center'>
                         <Link href={"/home"}
                             className={`2xl:text-xl font-sans font-semibold hover:text-[--secondary-color] duration-300

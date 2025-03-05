@@ -1,6 +1,7 @@
 import ContactSocial from '@/Components/ContactSocial'
 import Footer from '@/Components/Footer'
 import Information from '@/Components/Information'
+import MobileMenu from '@/Components/MobileMenu'
 import Navigation from '@/Components/Navigation'
 import Request from '@/Components/Request'
 import Routing from '@/Components/Routing'
@@ -10,6 +11,7 @@ export default function ContactPage() {
   return (
     <div>
       <Navigation />
+      <MobileMenu />
       <ContactSocial />
       <Routing
         title={'Contact'}

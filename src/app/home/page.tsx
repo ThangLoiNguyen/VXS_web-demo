@@ -7,10 +7,12 @@ import Footer from '@/Components/Footer'
 import AboutItems from '@/Components/AboutItems'
 import SlideProduct from '@/Components/SlideProduct'
 import Image from 'next/image'
+import MobileMenu from '@/Components/MobileMenu'
 export default function HomePage() {
   return (
-    <div>
+    <div className='relative'>
       <ContactSocial />
+      <MobileMenu/>
       <Navigation />
       <div className='relative mb-80'>
         <Image src={slideIntro} alt="slide-intro" className='animate-fade-left-right w-11/12' />
