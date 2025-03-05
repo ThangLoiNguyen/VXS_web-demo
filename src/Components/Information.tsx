@@ -1,8 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
-import vxsLogo from '../assets/vxs-logo.jpg'
-
 export default function Information() {
   return (
     <div className='flex flex-col w-full items-center'>

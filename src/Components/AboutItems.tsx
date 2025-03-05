@@ -1,32 +1,31 @@
 import Link from 'next/link'
-import { title } from 'process'
 import React from 'react'
 
 export default function AboutItems() {
   const dataAboutItems = [
     {
       title: "Cloud Solutions",
-      text: "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me."
+      text: "I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me."
     },
     {
       title: "Managed IT Services",
-      text: "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me."
+      text: "I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me."
     },
     {
       title: "Disaster Recovery",
-      text: "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me."
+      text: "I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me."
     },
     {
       title: "Cloud Desktop",
-      text: "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me."
+      text: "I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me."
     },
     {
       title: "Network Solutions",
-      text: "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me."
+      text: "I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me."
     },
     {
       title: "Support Consulting",
-      text: "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me."
+      text: "I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me."
     }
   ]
   return (
@@ -35,7 +34,7 @@ export default function AboutItems() {
         <span className='text-2xl md:text-6xl font-semibold text-white'>
           Our Service
         </span>
-        <p className='text-white'>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me.</p>
+        <p className='text-white'>I&apos;m a paragraph. Click here to add your own text and edit me. It&apos;s easy. Just click “Edit Text” or double click me.</p>
       </div>
       <div className='absolute flex flex-row flex-wrap top-72 gap-14 justify-center items-center w-full px-6 sm:px-20 xl:px-40 2xl:px-60'>
       {dataAboutItems.map(({ title, text }, index) => (

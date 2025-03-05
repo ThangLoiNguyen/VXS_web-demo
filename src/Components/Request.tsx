@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 import RecaptchaLogo from '@/Assets/RecaptchaLogo.svg.png'
-
+import Image from 'next/image'
 export default function Request() {
     return (
         <div className='flex flex-col w-full gap-5 items-center'>
@@ -33,7 +33,7 @@ export default function Request() {
                     <input id='checkbox' type="checkbox" placeholder='Tôi không phải là người máy' 
                     className='w-6 h-6 px-3 border border-gray-300 p-3 rounded-full cursor-pointer' />
                     <label htmlFor='checkbox' className=' flex items-center text-base duration-300 cursor-pointer'>Tôi không phải là người máy</label>
-                    <img src={RecaptchaLogo.src} alt="recaptcha-logo" className='w-10 object-contain' />
+                    <Image src={RecaptchaLogo} alt="recaptcha-logo" className='w-10 object-contain' />
                 </div>
             </div>
             <button className='mt-10 border border-gray-300 py-3 px-8 rounded-full bg-sky-600 hover:bg-sky-700 text-white'>Gửi ngay</button>

@@ -3,7 +3,8 @@ import React from 'react'
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faTwitter, faLinkedinIn, faFacebookMessenger } from '@fortawesome/free-brands-svg-icons'
-import { faXmark, faPaperPlane, faEllipsis } from '@fortawesome/free-solid-svg-icons'
+import { faXmark, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+import Image from 'next/image'
 export default function ContactSocial() {
     const [showChat, setShowChat] = React.useState(false)
     const handleShowChat = () => setShowChat(!showChat)
@@ -37,7 +38,7 @@ export default function ContactSocial() {
                 {showChat && 
                 <div className='absolute shadow-2xl -bottom-20 right-16 w-[400px] max-h-[500px] h-[80vh] bg-white rounded-t-2xl select-none overflow-hidden animate-fade-in'>
                     <div className='relative h-16 w-full bg-sky-600'>
-                        <img src="vxs-logo.jpg" alt=" vxs-logo" className='absolute top-1/2 -translate-y-1/2 left-3 h-10 w-10 rounded-full object-cover' />
+                        <Image src='/vxs-logo.jpg' alt=" vxs-logo" width={40} height={40} className='absolute top-1/2 -translate-y-1/2 left-3 h-10 w-10 rounded-full object-cover' />
                         <div className='absolute z-10 top-1/2 translate-y-[7px] left-10 w-3 h-3 rounded-full bg-green-600'></div>
                         <span className='absolute top-1/2 -translate-y-1/2 left-16 font-semibold text-white'>VXS</span>
                         <FontAwesomeIcon icon={faXmark} onClick={handleShowChat} className='absolute top-1/2 -translate-y-1/2 right-3 h-6 w-6 object-cover text-white hover:text-red-500 cursor-pointer' />

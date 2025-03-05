@@ -2,6 +2,7 @@
 import React from 'react'
 import Slider from "react-slick";
 import gecko from '@/Assets/gecko-introduction.webp'
+import Image from 'next/image'
 
 export default function SlideProduct() {
     const settings = {
@@ -68,7 +69,7 @@ export default function SlideProduct() {
                 {dataProduct.map(({ id, image }) => (
                     <div key={id} className='px-3 pb-10'>
                         <div className='flex flex-col md:flex-row w-full p-8 md:pb-16 items-center gap-5 rounded border bg-gradient-to-r from-sky-500 via-white to-white'>
-                            <img src={image.src} alt="image" className='w-2/3 object-contain' />
+                            <Image src={image} alt="image" className='w-2/3 object-contain' />
                             <div className='flex flex-col items-center justify-center w-full gap-1'>
                                 <span className='flex justify-center text-3xl md:text-2xl lg:text-3xl font-semibold'>Gecko</span>
                                 <span className='flex justify-center text-base md:text-sm lg:text-base pb-5'>Learning English</span>
