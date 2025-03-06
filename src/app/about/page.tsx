@@ -11,7 +11,6 @@ export default function AboutPage() {
     <div>
       <Navigation />
       <MobileMenu/>
-      <ContactSocial />
       <Routing
         title={'About'}
         link={'About'} />

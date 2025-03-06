@@ -28,7 +28,7 @@ export default function AboutPageContent() {
         }
     ]
     return (
-        <div className='flex flex-col w-full py-10'>
+        <div className='flex flex-col w-full py-16'>
             <div className="flex flex-col gap-10">
                 {dataAbout.map(({ id, title, text, image, background }) => (
                     <div key={id} className={`flex flex-row w-full gap-2
@@ -40,7 +40,7 @@ export default function AboutPageContent() {
                                 <h3 className="md:text-3xl font-semibold">{title}</h3>
                                 <p className="text-sm md:text-base text-gray-600">{text}</p>
                             </div>
-                            <Image src={image} alt={title} className={`w-1/2 h-full object-cover
+                            <Image src={image} alt={title} className={`w-1/3 h-full object-cover
                                 ${id % 2 === 0 ? 'rounded-l-full' : 'rounded-r-full'}`} />
                         </div>
                     </div>

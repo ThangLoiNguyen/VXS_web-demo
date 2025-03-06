@@ -12,7 +12,6 @@ export default function ContactPage() {
     <div>
       <Navigation />
       <MobileMenu />
-      <ContactSocial />
       <Routing
         title={'Contact'}
         link={'Contact'}

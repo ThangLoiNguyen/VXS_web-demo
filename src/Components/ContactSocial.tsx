@@ -11,7 +11,7 @@ export default function ContactSocial() {
     const handleShowChat = () => setShowChat(!showChat)
     return (
         <div>
-            <div className='md:fixed animate-fade-right-left z-50 h-0 bottom-[400px] right-12 md:flex flex-col gap-10'>
+            <div className='md:fixed animate-social-contact z-50 h-0 bottom-[400px] right-12 md:flex flex-col gap-10'>
                 <div className='flex bg-white px-2 py-1.5 rounded-full'>
                     <Link href={'https://www.facebook.com/'}>
                         <FontAwesomeIcon icon={faFacebookF} className=' h-5 w-5 object-cover hover:scale-125 text-black hover:text-sky-600 opacity-50 hover:opacity-100 duration-300 cursor-pointer' />

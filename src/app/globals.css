@@ -30,7 +30,9 @@
   }
 }
 .animate-fade-left-right {
-  animation: fade-left-right .6s ease-in forwards;
+  animation: fade-left-right .6s linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 30%;
 }
 
 @keyframes fade-right-left {
@@ -44,7 +46,9 @@
   }
 }
 .animate-fade-right-left {
-  animation: fade-right-left .6s ease-in forwards;
+  animation: fade-right-left .6s linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 30%;
 }
 
 @keyframes fade-up {
@@ -59,6 +63,7 @@
 }
 .animate-fade-up {
   animation: fade-up .6s ease-in forwards;
+  animation-delay: .1s;
 }
 
 @keyframes fade-down {
@@ -72,7 +77,7 @@
   }
 }
 .animate-fade-down {
-  animation: fade-down .1s ease-in forwards;
+  animation: fade-down .1s linear ;
 }
 
 @keyframes fade-menu {
@@ -86,7 +91,7 @@
   }
 }
 .animate-fade-menu {
-  animation: fade-menu .1s ease-in forwards;
+  animation: fade-menu .1s linear ;
 }
 
 @keyframes visible {
@@ -100,7 +105,23 @@
   }
 }
 .animate-visible {
-  animation: visible .6s ease-in-out forwards;
+  animation: visible .6s ease-in forwards;
+  animation-delay: .1s;
+}
+
+@keyframes social-contact {
+  from {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.animate-social-contact {
+  animation: social-contact .6s ease-in forwards;
+  animation-delay: .1s;
 }
 
 .slick-dots li.slick-active button:before {
