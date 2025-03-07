@@ -33,6 +33,7 @@
   animation: fade-left-right .6s linear;
   animation-timeline: view();
   animation-range: entry 0 cover 30%;
+  animation-fill-mode: forwards;
 }
 
 @keyframes fade-right-left {
@@ -49,6 +50,7 @@
   animation: fade-right-left .6s linear;
   animation-timeline: view();
   animation-range: entry 0 cover 30%;
+  animation-fill-mode: forwards;
 }
 
 @keyframes fade-up {
