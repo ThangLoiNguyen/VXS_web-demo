@@ -4,17 +4,17 @@ import slideIntro from '../../Assets/slide-intro.avif'
 import Link from 'next/link'
 import ContactSocial from '@/Components/ContactSocial'
 import Footer from '@/Components/Footer'
-import AboutItems from '@/Components/AboutItems'
 import SlideProduct from '@/Components/SlideProduct'
 import Image from 'next/image'
 import MobileMenu from '@/Components/MobileMenu'
+import AboutUs from '@/Components/AboutUs'
 export default function HomePage() {
   return (
     <div className='relative'>
       <ContactSocial />
       <MobileMenu />
       <Navigation />
-      <div className='relative mb-80'>
+      <div className='relative mb-96'>
         <Image src={slideIntro} alt="slide-intro" className='animate-fade-left-right w-11/12' />
         <div className='absolute animate-fade-up flex flex-col top-24 md:top-52 lg:top-60 right-16 md:right-40 lg:right-56 xl:right-80 gap-3 xl:gap-10 2xl:gap-20 bg-white ring-2 ring-gray-200 p-5 md:p-10 xl:p-16 w-3/5 lg:w-2/5'>
           <span className='text-lg md:text-2xl xl:text-6xl'>IT Consulting & Services</span>
@@ -35,7 +35,12 @@ export default function HomePage() {
           </span>
         </div>
       </div>
-      <AboutItems />
+      <div className='hidden md:flex w-full justify-center px-5 pt-16 pb-20'>
+        <div className='w-full px-10 py-5 border-b border-gray-300'>
+          <span className='text-3xl font-semibold py-[18px] border-b border-sky-500'>Về chúng tôi</span>
+        </div>
+      </div>
+      <AboutUs/>
       <div className='hidden md:flex w-full justify-center px-5 pt-16 pb-5'>
         <div className='w-full px-10 py-5 border-b border-gray-300'>
           <span className='text-3xl font-semibold py-[18px] border-b border-sky-500'>Sản phẩm tiêu biểu</span>

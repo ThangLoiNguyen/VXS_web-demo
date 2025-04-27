@@ -6,6 +6,7 @@ import { faClose, faBars, faSearch } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import vxsLogo from '../assets/vxs-logo.jpg'
 import Image from 'next/image'
+import { div } from 'framer-motion/client'
 export default function MobileMenu() {
     const [isOpenMenu, setIsOpenMenu] = React.useState(false);
     const toggleMenu = () => setIsOpenMenu(!isOpenMenu);
@@ -22,14 +23,17 @@ export default function MobileMenu() {
                 </Link>
                 <div className='flex flex-row items-center gap-2 md:gap-10'>
                     <div className='relative flex'>
-                        <input type="text" placeholder='Tìm kiếm' className='hidden md:flex md:w-[200px] xl:w-[300px] border border-gray-300 py-2 px-5 pr-12 rounded-full duration-600 outline-none focus:border focus:border-gray-500' />
+                        <input type="text" placeholder='Tìm kiếm' className='hidden md:flex md:w-[200px] xl:w-[300px] border-none focus:shadow-gray-900 shadow-sm shadow-gray-400 py-2 px-5 pr-12 rounded-full duration-600 outline-none' />
                         <label htmlFor="search">
                             <FontAwesomeIcon icon={faSearch} onMouseDown={toggleSearch}
-                                className='absolute p-2 md:p-0 scale-90 ring-1 ring-gray-400 text-white bg-[black] md:bg-white rounded-full md:ring-0 top-1/2 -translate-y-1/2 right-5 md:text-gray-500 cursor-pointer' />
+                                className='absolute p-2 md:p-0 scale-90 ring-1 ring-gray-400 text-white bg-[black] md:bg-white rounded-full md:ring-0 top-1/2 -translate-y-1/2 right-5 md:text-gray-500' />
                         </label>
                         {isOpenSearch &&
-                            <input id='search' type="text" placeholder='Tìm kiếm' onBlur={() => setIsOpenSearch(false)}
-                                className='absolute md:hidden flex top-14 -right-5 outline-none border-2 border-white ring-1 shadow-2xl ring-gray-300 focus:ring-black px-3 w-[90vw] py-2 rounded animate-fade-down placeholder:text-sm text-sm' />
+                            <div className='absolute md:hidden flex top-14 -right-5 animate-fade-down' onBlur={() => setIsOpenSearch(false)}>
+                                <input id='search' type="text" placeholder='Tìm kiếm'
+                                    className='relative outline-none border-2 border-white ring-1 shadow-2xl ring-gray-300 focus:ring-black px-3 w-[90vw] py-2 rounded placeholder:text-sm text-sm' />
+                                <button className='absolute right-2 top-1/2 -translate-y-1/2 rounded border-l bg-black text-white px-3 py-1.5 text-sm'>Search</button>
+                            </div>
                         }
                     </div>
                     <FontAwesomeIcon icon={faBars} onClick={toggleMenu}

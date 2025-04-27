@@ -36,7 +36,7 @@ export default function Footer() {
                                 type="text"
                                 id='email'
                                 name='Email'
-                                className='px-3 py-2 w-full rounded-full outline-none focus:border focus:border-gray-500'
+                                className='px-3 py-2 w-full rounded-full border-none focus:shadow-gray-900 shadow-sm shadow-gray-400 outline-none'
                             />
                         </div>
                         <div className='flex flex-col gap-1 w-[45%]'>
@@ -45,7 +45,7 @@ export default function Footer() {
                                 type="text"
                                 id='phone'
                                 name='Phone number'
-                                className='px-3 py-2 w-full rounded-full outline-none focus:border focus:border-gray-500'
+                                className='px-3 py-2 w-full rounded-full border-none focus:shadow-gray-900 shadow-sm shadow-gray-400 outline-none'
                             />
                         </div>
                     </div>
@@ -55,7 +55,7 @@ export default function Footer() {
                             type="text"
                             id='question'
                             name='Question'
-                            className='px-3 py-2 w-full rounded-full outline-none focus:border focus:border-gray-500'
+                            className='px-3 py-2 w-full rounded-full border-none focus:shadow-gray-900 shadow-sm shadow-gray-400 outline-none'
                         />
                     </div>
                     <button className='bg-sky-600 text-white px-3 py-2 mt-6 rounded-full cursor-pointer hover:bg-sky-700 shadow-lg'>Submit</button>
