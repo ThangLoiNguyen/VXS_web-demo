@@ -32,7 +32,7 @@ export default function Request() {
                 <div className='flex flex-row gap-3 w-80 items-center border-none focus:shadow-gray-900 shadow-sm shadow-gray-400 py-3 px-5 rounded-lg'>
                     <input id='checkbox' type="checkbox" placeholder='Tôi không phải là người máy' 
                     className='w-6 h-6 p-3 rounded-full cursor-pointer' />
-                    <label htmlFor='checkbox' className=' flex items-center text-base duration-300 cursor-pointer'>Tôi không phải là người máy</label>
+                    <label htmlFor='checkbox' className=' flex items-center text-base duration-300 select-none cursor-pointer'>Tôi không phải là người máy</label>
                     <Image src={RecaptchaLogo} alt="recaptcha-logo" className='w-10 object-contain' />
                 </div>
             </div>

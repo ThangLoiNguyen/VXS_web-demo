@@ -9,7 +9,7 @@ import Image from 'next/image'
 export default function Navigation() {
     const pathname = usePathname();
     return (
-        <div className='sticky z-40 overflow-hidden top-0 bg-white hidden lg:flex flex-row h-24 w-full gap-10 px-2 md:px-10 items-center shadow select-none'>
+        <div className='sticky z-40 overflow-hidden top-0 bg-white hidden lg:flex flex-row h-24 w-full gap-10 px-2 md:px-10 items-center shadow-lg select-none'>
             <div className='flex flex-row justify-between w-full'>
                 <Link href={'/'} className='flex flex-row gap-5 items-center w-fit'>
                     <Image src={vxsLogo} alt="vxs-logo"
@@ -19,23 +19,23 @@ export default function Navigation() {
                 <div className='hidden md:flex flex-row items-center gap-10'>
                     <div className='flex flex-col items-center'>
                         <Link href={"/home"}
-                            className={`2xl:text-base font-sans font-semibold hover:text-[--secondary-color] duration-300
-                            ${pathname === "/home" || pathname === "/" ? "text-[--secondary-color]" : "text-black"}`}>Trang chủ</Link>
+                            className={`2xl:text-base font-sans font-semibold hover:text-[--primary-color] duration-300
+                            ${pathname === "/home" || pathname === "/" ? "text-[--primary-color]" : "text-black"}`}>Trang chủ</Link>
                     </div>
                     <div className='flex flex-col items-center'>
                         <Link href={"/about"}
-                            className={`2xl:text-base font-sans font-semibold hover:text-[--secondary-color] duration-300
-                            ${pathname === "/about" ? "text-[--secondary-color]" : "text-black"}`}>Về chúng tôi</Link>
+                            className={`2xl:text-base font-sans font-semibold hover:text-[--primary-color] duration-300
+                            ${pathname === "/about" ? "text-[--primary-color]" : "text-black"}`}>Về chúng tôi</Link>
                     </div>
                     <div className='flex flex-col items-center'>
                         <Link href={"/product"}
-                            className={`2xl:text-base font-sans font-semibold hover:text-[--secondary-color] duration-300
-                            ${pathname === "/product" ? "text-[--secondary-color]" : "text-black"}`}>Dự án</Link>
+                            className={`2xl:text-base font-sans font-semibold hover:text-[--primary-color] duration-300
+                            ${pathname === "/product" ? "text-[--primary-color]" : "text-black"}`}>Dự án</Link>
                     </div>
                     <div className='flex flex-col items-center'>
                         <Link href={"/contact"}
-                            className={`2xl:text-base font-sans font-semibold hover:text-[--secondary-color] duration-300
-                            ${pathname === "/contact" ? "text-[--secondary-color]" : "text-black"}`}>Liên hệ</Link>
+                            className={`2xl:text-base font-sans font-semibold hover:text-[--primary-color] duration-300
+                            ${pathname === "/contact" ? "text-[--primary-color]" : "text-black"}`}>Liên hệ</Link>
                     </div>
                 </div>
             </div>
